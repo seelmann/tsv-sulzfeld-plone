@@ -7,3 +7,5 @@ tsv-sulzfeld-plone
     $ python bootstrap.py
     $ bin/buildout
     $ bin/instance fg 
+
+    $ bin/develop activate tsv.policy
