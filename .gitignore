@@ -4,5 +4,7 @@ eggs/
 parts/
 var/
 .installed.cfg
+*.pyc
 *.egg/
 *.egg-info/
+*.*~

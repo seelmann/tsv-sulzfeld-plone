@@ -14,7 +14,7 @@ long_description = (
     open('CHANGES.txt').read()
     + '\n')
 
-setup(name='tsv.policy',
+setup(name='tsv.theme',
       version=version,
       description="",
       long_description=long_description,
@@ -40,16 +40,14 @@ setup(name='tsv.policy',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'Plone',
-          'Products.PloneFormGen',
-          'tsv.theme',
+          'plone.app.theming',
       ],
-      extras_require={'test': ['plone.app.testing[robot]>=4.2.2']},
+      extras_require={'test': ['plone.app.testing']},
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      #setup_requires=["PasteScript"],
-      #paster_plugins=["templer.localcommands"],
+      setup_requires=["PasteScript"],
+      paster_plugins=["templer.localcommands"],
       )

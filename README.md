@@ -8,4 +8,5 @@ tsv-sulzfeld-plone
     $ bin/buildout
     $ bin/instance fg 
 
+    $ ../bin/zopeskel plone_basic tsv.theme
     $ bin/develop activate tsv.policy
