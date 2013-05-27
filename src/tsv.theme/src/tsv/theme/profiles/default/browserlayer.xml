@@ -1,0 +1,10 @@
+<layers>
+    
+    <!-- Enable the TSV Theme layer when installed -->
+    
+    <layer
+        name="tsv.theme"
+        interface="tsv.theme.interfaces.ITsvTheme"
+        />
+
+</layers>
