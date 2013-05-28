@@ -20,7 +20,8 @@
       description="Installs the tsv.theme package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
+  
+
   <browser:page
       name="plone_layout"
       for="*"
