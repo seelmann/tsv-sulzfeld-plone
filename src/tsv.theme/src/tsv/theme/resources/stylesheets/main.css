@@ -93,20 +93,22 @@ body.noRightColumn #column-content {
 }
 
 #global-navigation {
-    margin: 0 0 0 181px;
-    padding: 26px 0 0 0;
+    /*margin: 0 0 0 181px;
+    padding: 26px 0 0 0;*/
 }
 
 #global-navigation li a {
-    color: #AAA;
+    /*color: #AAA;*/
     font-weight: bold;
-    font-style: italic;
     text-transform: uppercase;
-    font-size: 80%;
 }
 #global-navigation li {
-    background: url(../images/global-navigation.png) left no-repeat;
-    padding: 0 6px 0 10px;
+    display: list-item;
+    border: none;
+    margin: 0 0 1px 0;
+    padding: 0 0 0 12px;
+    line-height: 30px;
+    width: 100%;
 }
 
 #global-navigation li:first-child {
@@ -114,7 +116,7 @@ body.noRightColumn #column-content {
 }
 
 #breadcrumbs {
-    margin: 30px 0 0 202px;
+    margin: 10px 0 0 202px;
     font-size: 80%;
     font-weight: bold;
 }
@@ -206,57 +208,6 @@ dl.portletLogin label {
 
 div.formControls {
     margin: 0;
-}
-
-.ploneCalendar .todaynoevent {
-    border:2px solid #ff9900;
-}
-
-dl.portletCalendar dt.portletHeader {
-    background: #eeeddc;
-    border-left: solid 1px #c1bb85;
-    border-right: solid 1px #c1bb85;
-    border-top: solid 1px #c1bb85;
-    text-align: center;
-    padding: 0;
-    font-weight: normal;
-}
-
-dl.portletCalendar dt.portletHeader a,
-dl.portletCalendar dt.portletHeader a:hover {
-    color: #c1bb85;
-}
-
-dl.portletCalendar dt.portletHeader a.prev {
-    float: left;
-    margin:0 -0.5em;
-    padding:0 1em;
-}
-
-dl.portletCalendar dt.portletHeader a.next {
-    float: right;
-    margin:0 -0.5em;
-    padding:0 1em;
-}
-
-dl.portletCalendar dd.portletItem {
-    padding: 0;
-}
-
-dl.portletCalendar .ploneCalendar {
-    width: 100%;
-    border: solid 1px #c1bb85;
-}
-
-dl.portletCalendar .ploneCalendar td {
-    padding: 2px;
-    width: 14%;
-    text-align: center;
-}
-
-dl.portletCalendar .ploneCalendar th {
-    background: #eeeddc;
-    border-bottom: solid 1px #c1bb85;
 }
 
 dl.portletSearch input.searchButton {
