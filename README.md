@@ -6,7 +6,7 @@ tsv-sulzfeld-plone
     $ pip install pil
     $ python bootstrap.py
     $ bin/buildout
+    $ bin/develop activate tsv.policy
     $ bin/instance fg 
 
     $ ../bin/zopeskel plone_basic tsv.theme
-    $ bin/develop activate tsv.policy

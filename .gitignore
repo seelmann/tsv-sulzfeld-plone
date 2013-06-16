@@ -3,6 +3,7 @@ develop-eggs/
 eggs/
 parts/
 var/
+venv/
 .installed.cfg
 *.pyc
 *.egg/
