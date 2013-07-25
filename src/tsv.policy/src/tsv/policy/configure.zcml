@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
@@ -18,5 +19,14 @@
    />
 
   <!-- -*- extra stuff goes here -*- -->
+
+  <!-- Behaviour to generate name for a Spieltermin -->
+  <include package="plone.behavior" file="meta.zcml" />
+  <plone:behavior
+    title="Name vom Spieltermins"
+    description="Automatische Erstellung des Names fuer einen Spieltermin."
+    provides=".behaviors.INameForSpieltermin"
+    factory=".behaviors.NameForSpieltermin"
+    />
 
 </configure>
