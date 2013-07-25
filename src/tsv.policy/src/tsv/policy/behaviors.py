@@ -1,4 +1,3 @@
-from tsv.policy.interfaces import INameForSpieltermin
 from zope import interface
 from datetime import timedelta
 from plone.app.content.interfaces import INameFromTitle
