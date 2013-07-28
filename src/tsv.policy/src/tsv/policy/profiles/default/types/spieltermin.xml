@@ -69,9 +69,14 @@
         &lt;title&gt;Gast&lt;/title&gt;
       &lt;/field&gt;
       &lt;field name="info" type="zope.schema.TextLine"&gt;
-        &lt;description&gt;Zusatzinformationen, z.B. Spielort, Nachholspiel&lt;/description&gt;
+        &lt;description&gt;Kurze Zusatzinformation, z.B. Spielort, Nachholspiel&lt;/description&gt;
         &lt;required&gt;False&lt;/required&gt;
         &lt;title&gt;Info&lt;/title&gt;
+      &lt;/field&gt;
+      &lt;field name="vorschau" type="plone.app.textfield.RichText"&gt;
+        &lt;description/&gt;
+        &lt;required&gt;False&lt;/required&gt;
+        &lt;title&gt;Vorschau&lt;/title&gt;
       &lt;/field&gt;
       &lt;field name="ergebnis" type="zope.schema.TextLine"&gt;
         &lt;description/&gt;
@@ -83,7 +88,7 @@
         &lt;required&gt;False&lt;/required&gt;
         &lt;title&gt;Torsch&amp;#252;tzen&lt;/title&gt;
       &lt;/field&gt;
-      &lt;field name="spielbericht" type="zope.schema.Text"&gt;
+      &lt;field name="spielbericht" type="plone.app.textfield.RichText"&gt;
         &lt;description/&gt;
         &lt;required&gt;False&lt;/required&gt;
         &lt;title&gt;Spielbericht&lt;/title&gt;
