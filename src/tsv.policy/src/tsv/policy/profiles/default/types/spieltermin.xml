@@ -44,6 +44,13 @@
           &lt;element&gt;1. Mannschaft&lt;/element&gt;
           &lt;element&gt;2. Mannschaft&lt;/element&gt;
           &lt;element&gt;3. Mannschaft&lt;/element&gt;
+          &lt;element&gt;U19&lt;/element&gt;
+          &lt;element&gt;U17&lt;/element&gt;
+          &lt;element&gt;U15&lt;/element&gt;
+          &lt;element&gt;U13&lt;/element&gt;
+          &lt;element&gt;U11&lt;/element&gt;
+          &lt;element&gt;U9&lt;/element&gt;
+          &lt;element&gt;U7&lt;/element&gt;
         &lt;/values&gt;
       &lt;/field&gt;
       &lt;field name="spielart" type="zope.schema.Choice"&gt;
