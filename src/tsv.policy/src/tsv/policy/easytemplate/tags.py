@@ -96,7 +96,7 @@ class SpieltermineTag(object):
                 "sportart":obj.sportart,
                 "mannschaft":obj.mannschaft,
                 "spielart":obj.spielart,
-                "datum":obj.start.strftime("%A, %d. %B %Y um %H:%M"),
+                "datum":obj.start.strftime("%A, %d. %B %Y um %H:%M").decode("utf-8"),
                 "heim":obj.heim,
                 "gast":obj.gast,
                 "info":obj.info or "",
@@ -171,5 +171,8 @@ def render(template, scriptingContext):
     engine = getEngine()
     template, errors = engine.loadString(template, False)
     result, evaluation_errors = template.evaluate(scriptingContext)
+    if evaluation_errors:
+        from collective.templateengines.utils import dump_messages
+        dump_messages(evaluation_errors)
     return result
 
